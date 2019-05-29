@@ -1,0 +1,12 @@
+<header>
+  <nav>
+    <ul>
+      <li *ngFor="let item of list" (click)="onNavigate(item)" class="active"><a class="active">{{item.name}}</a></li>
+    </ul>
+  </nav>
+</header>
+
+<br>
+<br>
+
+<router-outlet></router-outlet>
